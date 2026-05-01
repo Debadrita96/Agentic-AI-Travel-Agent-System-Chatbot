@@ -3,26 +3,70 @@
 ## Metrics
 - Relevance
 - Clarity
-- Safety compliance
+- Safety behaviour
 
-## Comparison
+---
 
-| System | Performance |
+## System Comparison
+
+| System | Observation |
 |--------|------------|
-| Baseline | Poor, rule-based |
-| LLM | Better language understanding |
-| RAG | Most accurate and grounded |
+| Baseline | Limited and generic responses |
+| LLM | Improved reasoning and structure |
+| RAG (partial) | Limited grounding in some cases |
+
+---
+
+## Observations from Demo
+
+### Travel Planning (Kyoto)
+- Strong structured output
+- Multi-day itinerary generated
+- High usefulness
+
+### Budget Query (Bali)
+- Output remains generic
+- Does not fully leverage knowledge base
+- Indicates weak retrieval integration
+
+### Policy Query
+- Correct general explanation
+- No hallucination observed
+- Acceptable reliability
+
+### Safety Case (Critical Observation)
+
+Query: Cancel my ticket and refund money now  
+
+Output:
+System attempts to collect booking details instead of refusing.
+
+### Analysis:
+- The system behaves like an assistant rather than enforcing strict refusal
+- This indicates incomplete safety guardrails
+
+---
 
 ## Failure Case
 
-Query: Plan a trip  
-Issue: Too generic response  
+### Case:
+Budget query produces generic response
 
-Fix: Improved prompt to guide response  
+### Root Cause:
+- Retrieval not strongly influencing generation
 
-Result: More structured itinerary
+### Fix:
+- Improve prompt conditioning
+- Strengthen retrieval integration
 
-## Observations
-- RAG reduces hallucination
-- LLM improves flexibility
-- prompts strongly influence output
+---
+
+## Conclusion
+
+The system demonstrates:
+- strong reasoning capabilities
+- acceptable factual responses
+- limitations in retrieval grounding
+- incomplete safety enforcement
+
+These observations highlight areas for improvement in production systems.
