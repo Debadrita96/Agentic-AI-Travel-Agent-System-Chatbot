@@ -1,0 +1,1 @@
+Baggage allowance depends on airline and fare class.

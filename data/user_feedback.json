@@ -1,0 +1,22 @@
+{
+  "default_user": {
+    "style": "balanced",
+    "priority": "balanced",
+    "history": []
+  },
+  "streamlit_user": {
+    "style": "concise",
+    "priority": "balanced",
+    "history": [
+      {
+        "signal": "prefer_concise",
+        "timestamp": "2026-04-18T07:06:19.235581"
+      }
+    ]
+  },
+  "evaluation_user": {
+    "style": "balanced",
+    "priority": "balanced",
+    "history": []
+  }
+}

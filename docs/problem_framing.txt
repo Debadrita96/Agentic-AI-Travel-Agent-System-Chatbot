@@ -1,0 +1,16 @@
+
+User: Travel support customer
+
+Problem:
+Users need quick answers about refunds, baggage, and booking changes.
+
+Inputs:
+User query
+
+Outputs:
+Policy-based answer or escalation
+
+Failure cases:
+Ambiguous queries
+Missing policy info
+Unsafe requests

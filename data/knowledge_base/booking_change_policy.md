@@ -1,0 +1,1 @@
+Booking changes depend on fare rules and availability.

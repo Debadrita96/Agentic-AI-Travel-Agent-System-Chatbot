@@ -1,0 +1,1 @@
+Refund depends on ticket type. Non-refundable tickets require escalation.

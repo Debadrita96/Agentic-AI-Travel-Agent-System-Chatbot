@@ -1,0 +1,8 @@
+
+Baseline vs LLM comparison:
+Baseline → generic
+LLM → structured
+RAG → policy-based
+
+Failure case:
+LLM hallucinated refund → fixed using RAG
