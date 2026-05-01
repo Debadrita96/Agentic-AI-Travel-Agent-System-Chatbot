@@ -35,6 +35,10 @@ The system evolves from a rule-based baseline to a fully functional AI agent inc
 - Docker
 
 ---
+## Limitations
+
+- Retrieval responses may remain generic in some cases
+- Safety constraints are advisory and not strictly enforced
 
 ## 🚀 Run Locally
 ```bash
