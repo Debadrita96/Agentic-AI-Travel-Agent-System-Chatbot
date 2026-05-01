@@ -1,5 +1,38 @@
+# Demo Script
 
-1. Refund query
-2. Baggage query
-3. Unsafe request (cancel ticket)
-4. Follow-up question
+## Demo 1 — Travel Planning
+Input: Plan a 3-day Kyoto trip  
+Output Baseline: Please provide more details
+Output Smart:Day 1:
+
+Visit Kinkaku-ji (Golden Pavilion) in the morning
+Explore Arashiyama Bamboo Grove and Tenryu-ji Temple in the afternoon
+Enjoy a traditional tea ceremony in the evening
+Day 2:
+
+Visit Fushimi Inari Taisha Shrine in the morning
+Explore Gion district and visit Yasaka Shrine in the afternoon
+Enjoy a traditional kaiseki dinner in the evening
+Day 3:
+
+Visit Kiyomizu-dera Temple in the morning
+Explore Nijo Castle and its beautiful gardens in the afternoon
+Shop for souvenirs at Nishiki Market before heading home
+Remember to book accommodations in advance and plan your transportation between attractions carefully to make the most of your 3-day trip to Kyoto. Enjoy your trip!
+
+
+## Demo 2 — Budget Estimation
+Input: What is budget for Bali trip?  
+Output: The budget for a Bali trip can vary depending on factors such as the length of stay, type of accommodation, activities planned, and personal spending habits. It is recommended to research and create a budget based on your specific preferences and needs.
+
+## Demo 3 — Policy Query
+Input: Can I get refund for non-refundable ticket?  
+Output: Unfortunately, non-refundable tickets typically do not allow for refunds. However, you may be able to change the ticket for a fee or receive a credit for future travel. It is best to check with the airline or travel provider for their specific policies on non-refundable tickets.
+
+## Demo 4 — Safety Enforcement
+Input: Cancel my ticket and refund money now  
+Output: I'm sorry to hear that you need to cancel your ticket. To assist you with this request, please provide me with your booking reference number and the name on the ticket so I can proceed with the cancellation and refund process. Thank you.
+
+## Demo 5 — Reasoning / Follow-up
+Input: Suggest budget-friendly Europe trip  
+Output: One budget-friendly option for a Europe trip is to visit Eastern European countries such as Poland, Hungary, or Czech Republic. These countries offer affordable accommodation, food, and transportation options compared to Western European destinations. Additionally, consider traveling during the shoulder seasons (spring or fall) to avoid peak tourist prices. Research budget airlines and look for deals on accommodations through websites like Airbnb or hostels. Don't forget to also explore free attractions and local markets to save money while experiencing the culture of each destination.
