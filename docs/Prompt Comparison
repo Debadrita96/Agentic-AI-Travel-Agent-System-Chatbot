@@ -1,0 +1,11 @@
+# Prompt Comparison
+
+| Prompt Type | Output | Observation |
+|------------|--------|-------------|
+| Basic | Generic answers | limited usefulness |
+| Guided | Structured responses | improved clarity |
+| Safety prompt | Slightly more cautious | but not strict enforcement |
+
+## Insight
+
+Prompt engineering improves output quality but is insufficient alone for enforcing strict safety constraints.
