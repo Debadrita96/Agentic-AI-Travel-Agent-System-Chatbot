@@ -1,8 +1,28 @@
+# Evaluation Report
 
-Baseline vs LLM comparison:
-Baseline → generic
-LLM → structured
-RAG → policy-based
+## Metrics
+- Relevance
+- Clarity
+- Safety compliance
 
-Failure case:
-LLM hallucinated refund → fixed using RAG
+## Comparison
+
+| System | Performance |
+|--------|------------|
+| Baseline | Poor, rule-based |
+| LLM | Better language understanding |
+| RAG | Most accurate and grounded |
+
+## Failure Case
+
+Query: Plan a trip  
+Issue: Too generic response  
+
+Fix: Improved prompt to guide response  
+
+Result: More structured itinerary
+
+## Observations
+- RAG reduces hallucination
+- LLM improves flexibility
+- prompts strongly influence output
