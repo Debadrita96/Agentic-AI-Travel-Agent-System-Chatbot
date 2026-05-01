@@ -1,20 +1,35 @@
 import streamlit as st
 from agent_system import TravelAgent
 
-st.title("Travel AI Support Agent")
+st.set_page_config(page_title="Travel AI Agent", layout="centered")
 
+st.title("✈️ Travel AI Support Agent")
+
+# Create agent
 agent = TravelAgent()
 
-user_input = st.text_input("Enter your query:")
+# Input
+query = st.text_input("Enter your travel query:")
 
-mode = st.selectbox("Mode", ["baseline", "smart"])
+# Options in columns
+col1, col2 = st.columns(2)
 
-use_retrieval = st.checkbox("Use Retrieval")
+with col1:
+    mode = st.selectbox("Mode", ["baseline", "smart"])
 
-if st.button("Run"):
-    if mode == "baseline":
-        result = agent.baseline_respond(user_input)
+with col2:
+    use_retrieval = st.checkbox("Use Retrieval")
+
+# Run button
+if st.button("Run Agent"):
+    if query.strip() == "":
+        st.warning("Please enter a query.")
     else:
-        result = agent.smart_respond(user_input, use_retrieval)
+        if mode == "baseline":
+            result = agent.baseline_respond(query)
+        else:
+            result = agent.smart_respond(query, use_retrieval)
 
-    st.write(result["answer"])
+        st.subheader("Response:")
+        st.write(result["answer"])
+
