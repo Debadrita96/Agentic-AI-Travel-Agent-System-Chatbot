@@ -1,16 +1,32 @@
+# Problem Framing
 
-User: Travel support customer
+## User Persona
+The primary user is a travel customer seeking assistance with trip planning, budgeting, and understanding travel policies such as refunds or baggage rules.
 
-Problem:
-Users need quick answers about refunds, baggage, and booking changes.
+## Workflow
+User enters a query → AI agent processes → retrieves knowledge if needed → generates response → ensures safety compliance.
 
-Inputs:
-User query
+## Problem Statement
+Traditional customer support systems are slow, inconsistent, and require manual intervention. Users often face difficulty in:
+- planning trips efficiently
+- understanding policies
+- getting quick responses
 
-Outputs:
-Policy-based answer or escalation
+## Inputs & Outputs
+- Input: natural language travel query
+- Output: structured, safe, and helpful response
 
-Failure cases:
-Ambiguous queries
-Missing policy info
-Unsafe requests
+## Constraints
+- No execution of real-world actions (e.g., booking, payments)
+- No storage of sensitive user data
+- Must avoid hallucination
+
+## Success Criteria
+- relevant and useful responses
+- safe handling of risky queries
+- ability to provide structured travel guidance
+
+## Failure Cases
+- vague queries → generic response
+- missing knowledge → fallback response
+- unsafe request → refusal required
